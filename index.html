@@ -1,0 +1,305 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ronald: La entrega navideña de Lauti</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <div class="snow">✦　❄　✧　❄　✦　❄　✧</div>
+
+    <main class="container">
+
+        <!-- PANTALLA 1: RONALD -->
+
+        <section class="panel welcome-panel">
+
+            <div class="ronald-area">
+                <img
+                    class="ronald"
+                    src="./imagenes_ronald_claus (2)/imagenes_ronald_claus/ronald-japones.jpe"
+                    alt="Ronald McDonald japonés"
+                >
+            </div>
+
+            <div class="welcome-content">
+
+                <div class="pixel-flower red-flower">✿</div>
+
+                <h1>¡HO HO HO, LAU!</h1>
+
+                <div class="heart">♥</div>
+
+                <p>
+                    Ronald tiene algo
+                    <br>
+                    muy especial para vos.
+                </p>
+
+                <button id="giftButton">
+                    🎁 RECIBIR MI REGALO
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- PANTALLA 2: RAMO -->
+
+        <section id="surprise" class="panel gift-panel hidden">
+
+            <div class="bouquet-area">
+
+                <svg class="bouquet" viewBox="0 0 260 280"
+                     xmlns="http://www.w3.org/2000/svg"
+                     shape-rendering="crispEdges">
+
+                    <!-- Tallos -->
+                    <rect x="118" y="110" width="8" height="110" fill="#267b32"/>
+                    <rect x="85" y="120" width="8" height="90" fill="#328c36"/>
+                    <rect x="155" y="115" width="8" height="95" fill="#267b32"/>
+                    <rect x="105" y="135" width="8" height="75" fill="#398f3d"/>
+
+                    <!-- Hojas -->
+                    <rect x="75" y="160" width="25" height="8" fill="#267b32"/>
+                    <rect x="65" y="150" width="15" height="15" fill="#398f3d"/>
+                    <rect x="155" y="165" width="25" height="8" fill="#267b32"/>
+                    <rect x="175" y="150" width="15" height="15" fill="#398f3d"/>
+
+                    <!-- Amapola roja -->
+                    <rect x="105" y="42" width="30" height="15" fill="#c9162b"/>
+                    <rect x="95" y="52" width="50" height="15" fill="#e51d32"/>
+                    <rect x="105" y="67" width="30" height="12" fill="#c9162b"/>
+                    <rect x="115" y="52" width="12" height="12" fill="#ffcf35"/>
+
+                    <!-- Flor azul -->
+                    <rect x="45" y="82" width="20" height="15" fill="#3159c9"/>
+                    <rect x="35" y="92" width="45" height="15" fill="#4779ed"/>
+                    <rect x="45" y="107" width="20" height="15" fill="#3159c9"/>
+                    <rect x="52" y="95" width="12" height="12" fill="#ffcf35"/>
+
+                    <!-- Margarita -->
+                    <rect x="160" y="68" width="20" height="12" fill="#fff4df"/>
+                    <rect x="150" y="80" width="45" height="15" fill="#fff4df"/>
+                    <rect x="160" y="95" width="20" height="12" fill="#fff4df"/>
+                    <rect x="165" y="82" width="15" height="12" fill="#ffcf35"/>
+
+                    <!-- Flor rosa -->
+                    <rect x="95" y="100" width="20" height="12" fill="#e879bc"/>
+                    <rect x="85" y="112" width="45" height="12" fill="#f49bd0"/>
+                    <rect x="95" y="124" width="20" height="12" fill="#e879bc"/>
+                    <rect x="100" y="112" width="12" height="12" fill="#ffcf35"/>
+
+                    <!-- Envoltura del ramo -->
+                    <path d="M55 145 H205 L175 245 H85 Z" fill="#ed91c0"/>
+                    <path d="M55 145 L130 185 L205 145" fill="#ffc1dc"/>
+                    <path d="M85 245 L130 185 L175 245" fill="#d86da5"/>
+
+                    <!-- Moño -->
+                    <rect x="112" y="220" width="35" height="15" fill="#c9162b"/>
+                    <rect x="95" y="210" width="20" height="22" fill="#e51d32"/>
+                    <rect x="145" y="210" width="20" height="22" fill="#e51d32"/>
+                    <rect x="122" y="235" width="15" height="20" fill="#c9162b"/>
+
+                </svg>
+
+                <span class="bouquet-heart heart-one">♥</span>
+                <span class="bouquet-heart heart-two">♥</span>
+
+            </div>
+
+            <div class="gift-content">
+
+                <h2>¡ENTREGA PARA LAUTI!</h2>
+
+                <p>
+                    De parte de Ronald Claus,
+                    <br>
+                    con muchísimo cariño. ♥
+                </p>
+
+                <button id="letterButton">
+                    ✉ ABRIR MI CARTA
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- PANTALLA 3: CARTA -->
+
+        
+<section id="jojoLetter" class="letter-screen hidden">
+
+    <div class="scrapbook">
+
+        <div class="scrapbook-header">
+            <span>୨୧ JOJOLION SCRAPBOOK ୨୧</span>
+            <span>25 · 12 · 2026</span>
+        </div>
+
+        <h1 class="scrapbook-title">Un pequeño regalo para vos</h1>
+        <p class="scrapbook-subtitle">
+            Hecho con muchísimo cariño ♡
+        </p>
+
+        <div class="photo-collage">
+            <img src="imagenes_ronald_claus (2)/imagenes_ronald_claus/gappy-yasuho-1.jpe"
+                 alt="Gappy y Yasuho">
+
+            <img src="imagenes_ronald_claus (2)/imagenes_ronald_claus/gappy-yasuho-2.jpe"
+                 alt="Gappy y Yasuho juntos">
+        </div>
+
+        <div class="special-delivery">
+
+            <div class="delivery-top">
+                <span>୨୧ RONALD CLAUS POSTAL SERVICE ୨୧</span>
+                <span>25 · 12 · 2026</span>
+            </div>
+
+            <div class="delivery-content">
+
+                <p class="delivery-label">
+                    UNA ENTREGA MUY ESPECIAL
+                </p>
+
+                <h2>¡REGALO SÚPER ESPECIAL!</h2>
+
+                <div class="delivery-divider">
+                    ✧ ───── ♡ ───── ✧
+                </div>
+
+                <p class="delivery-origin">
+                    Enviado desde <strong>Junín</strong>
+                </p>
+
+                <p class="delivery-message">
+                    Un pequeño regalo preparado con muchísimo amor,
+                    especialmente para vos, Lauti.
+                </p>
+
+                <button id="openLetterButton">
+                    ✉ ABRIR MI REGALO
+                </button>
+
+            </div>
+
+            <div class="delivery-bottom">
+                <span>WITH LOVE, EMMI ★</span>
+                <span>FRAGILE: HANDLE WITH LOVE</span>
+            </div>
+
+        </div>
+
+        <div class="letter-paper hidden" id="finalLetter">
+
+            <div class="paper-decoration">୨୧</div>
+
+            <p class="letter-date">
+                PARA MI PERSONA FAVORITA
+            </p>
+
+            <h2>Mi vida, Lau:</h2>
+
+            <div class="letter-text">
+
+                <p>
+                    Hoy es 25 de diciembre, Navidad. Es nuestra primera Navidad
+                    juntos y me hace muy feliz saberlo.
+                </p>
+
+                <p>
+                    Mi amor, es muy lindo mirar atrás en el tiempo y ver todo lo que
+                    pasamos juntos. Por más que hayamos tenido momentos feos, puedo
+                    ver cuánto progresamos ambos, y es muy bonito darse cuenta de eso.
+                </p>
+
+                <p>
+                    Nos conocimos por Instagram, enganchamos rapidísimo y, a las
+                    pocas semanas, ya hablábamos por WhatsApp.
+                </p>
+
+                <p>
+                    Yo estaba pasando por un momento horrible y, aun así, vos lograste
+                    hacerme sonreír y reír con esas boludeces que solo vos sabés decir
+                    y que tanto me encantan.
+                </p>
+
+                <p>
+                    Me enamoraste de una forma tan sencilla y tan rápida que hasta me
+                    cuesta expresar en qué momento exacto pasó. Pero, para cuando
+                    habían transcurrido dos semanas, ya me gustabas, mi amor.
+                </p>
+
+                <p>
+                    Me gusta todo de vos. Me hacés reír, sonreír, sonrojarme y hasta
+                    llorar de felicidad. Me hacés revolcarme por la cama cada vez que
+                    me decís algo lindo. Tenés una manera tan tuya de hacerme sentir
+                    cosas que nunca me canso de descubrir.
+                </p>
+
+                <p>
+                    El año pasado tenía muchísimas cosas por decirte, pero no podía,
+                    y mucho menos me animaba. Una de ellas era que me hubiera
+                    encantado que dejaras a aquella persona y te quedaras conmigo.
+                    Yo sentía que podía hacerte feliz y que quería que estuviéramos
+                    juntos, pero bueno... no me animé a decírtelo.
+                </p>
+
+                <p>
+                    Te adoro, mi vida. Desde que llegaste, llenaste mis días de
+                    sonrisas. Con tu risa cálida y tu dulce voz lograste darle luz
+                    a momentos en los que me costaba encontrarla. No sabés lo mucho
+                    que significás para mí.
+                </p>
+
+                <p>
+                    Quise hacerte este regalo basándome en tus gustos, con la
+                    intención de enamorarte un poquito más y, sobre todo, de
+                    demostrarte que sí te escucho cuando hablás de las cosas que
+                    amás. Me gusta conocer tus gustos, descubrir lo que te apasiona
+                    y encontrar maneras de compartirlo con vos.
+                </p>
+
+                <p>
+                    Quiero seguir conociéndote, descubrir cada parte de vos,
+                    acompañarte en cada etapa y construir muchísimos recuerdos
+                    juntos. Quiero estar con vos por toda la vida y que nunca
+                    dejemos de elegirnos.
+                </p>
+
+                <p>
+                    Gracias por pasar este día conmigo como pareja, por elegirme,
+                    por amarme y por todo lo que me hacés sentir. Gracias por
+                    dejarme compartir esta Navidad con vos y por convertirla en
+                    un recuerdo que voy a guardar con muchísimo cariño.
+                </p>
+
+            </div>
+
+            <p class="letter-signature">
+                <strong>Te amo muchísimo. Feliz Navidad, mi niño lindo.</strong>
+                <br><br>
+                <strong>Emmi ★</strong>
+            </p>
+
+            <div class="paper-decoration bottom-decoration">♡</div>
+
+        </div>
+
+        <div class="scrapbook-footer">
+            <span>GAPPY & YASUHO</span>
+            <span>FOREVER IN MY HEART ✧</span>
+        </div>
+
+    </div>
+
+</section>

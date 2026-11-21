@@ -1,0 +1,601 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    background:
+        radial-gradient(circle, #ff7580 2px, transparent 3px),
+        linear-gradient(145deg, #a90019, #e51d32, #8b0016);
+    background-size: 35px 35px, cover;
+    background-attachment: fixed;
+    font-family: "Courier New", monospace;
+    color: #8e101d;
+    padding: 35px 12px;
+    overflow-x: hidden;
+}
+
+.snow {
+    position: fixed;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    color: #fff1dc;
+    font-size: 25px;
+    letter-spacing: 15px;
+    opacity: .8;
+    pointer-events: none;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.panel {
+    position: relative;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    align-items: center;
+    min-height: 340px;
+    padding: 25px;
+    background: #fff2dc;
+    border: 7px solid #e9b83e;
+    outline: 3px solid #69000f;
+    box-shadow: 0 8px 0 #64000e;
+    overflow: hidden;
+}
+
+.welcome-panel {
+    background:
+        radial-gradient(circle, #ffd5c9 2px, transparent 3px),
+        #fff2dc;
+    background-size: 30px 30px;
+}
+
+.ronald-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.ronald {
+    width: 100%;
+    max-width: 350px;
+    max-height: 310px;
+    object-fit: contain;
+    filter: drop-shadow(5px 7px 0 #a90019);
+    animation: float 3s ease-in-out infinite;
+}
+
+.welcome-content,
+.gift-content {
+    text-align: center;
+    padding: 15px;
+}
+
+h1, h2 {
+    color: #bd1729;
+    font-family: "Courier New", monospace;
+    font-weight: 1000;
+    text-shadow: 2px 2px #efc64d;
+}
+
+h1 {
+    font-size: clamp(25px, 4vw, 43px);
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: clamp(24px, 4vw, 38px);
+}
+
+.heart {
+    color: #d71932;
+    font-size: 30px;
+    margin: 12px;
+}
+
+p {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.6;
+    margin: 18px 0;
+}
+
+button {
+    background: #ffcf35;
+    color: #8e101d;
+    border: 5px solid #a90019;
+    padding: 17px 22px;
+    font-family: "Courier New", monospace;
+    font-size: 16px;
+    font-weight: 1000;
+    cursor: pointer;
+    box-shadow: 0 6px 0 #760013;
+    transition: .2s;
+}
+
+button:hover {
+    transform: translateY(-4px);
+    background: #ffe68b;
+    box-shadow: 0 10px 0 #760013;
+}
+
+button:active {
+    transform: translateY(3px);
+    box-shadow: 0 2px 0 #760013;
+}
+
+/* SEGUNDO REGALO */
+
+.gift-panel {
+    grid-template-columns: 45% 55%;
+    min-height: 330px;
+    background: #fff2dc;
+}
+
+.bouquet-area {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bouquet {
+    width: 245px;
+    max-width: 100%;
+    filter: drop-shadow(5px 6px 0 #e3a4bd);
+    animation: float 3s ease-in-out infinite;
+}
+
+.bouquet-heart {
+    position: absolute;
+    color: #d71932;
+    font-size: 30px;
+}
+
+.heart-one {
+    top: 20%;
+    left: 15%;
+}
+
+.heart-two {
+    bottom: 20%;
+    right: 12%;
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* CARTA JOJOLION: LA TERMINAREMOS APARTE */
+
+.letter-screen {
+    padding: 30px;
+    background: #24152f;
+    border: 5px solid #d8ad55;
+}
+
+.letter-card {
+    padding: 30px;
+    color: #fff2d5;
+    background: linear-gradient(145deg, #21102e, #100b20);
+    border: 3px solid #d8ad55;
+    text-align: center;
+}
+
+.letter-card h2 {
+    color: #e5bf73;
+    margin: 20px;
+}
+
+.letter-subtitle {
+    color: #d8ad55;
+    letter-spacing: 3px;
+}
+
+.letter-content {
+    margin: 25px auto;
+    padding: 20px;
+    border: 1px solid #d8ad55;
+    text-align: left;
+    max-width: 650px;
+}
+
+.jojo-effect {
+    color: #d8ad55;
+    font-size: 28px;
+    letter-spacing: 8px;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* CELULARES */
+
+@media (max-width: 650px) {
+    .panel {
+        grid-template-columns: 1fr;
+        padding: 15px;
+    }
+
+    .ronald {
+        max-height: 230px;
+    }
+
+    .gift-panel {
+        grid-template-columns: 1fr;
+    }
+
+    .bouquet {
+        width: 190px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    button {
+        font-size: 13px;
+    }
+}
+
+/* ===== CARTA JOJOLION SCRAPBOOK ===== */
+
+.letter-screen {
+    background: #ead6e5;
+    padding: 25px;
+    border: 5px solid #b88a9e;
+}
+
+.scrapbook {
+    position: relative;
+    max-width: 850px;
+    margin: auto;
+    padding: 30px;
+    background:
+        radial-gradient(circle, #e8c8d8 1px, transparent 2px),
+        #fff4ec;
+    background-size: 22px 22px;
+    border: 2px solid #c99eaa;
+    box-shadow: 8px 8px 0 #bd91a6;
+    color: #59404e;
+}
+
+.scrapbook-header,
+.scrapbook-footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    color: #a36e85;
+    font-size: 11px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.scrapbook-title {
+    color: #a85e83 !important;
+    font-family: Georgia, serif;
+    font-size: clamp(25px, 5vw, 42px);
+    text-shadow: none;
+    margin-top: 30px;
+}
+
+.scrapbook-subtitle {
+    color: #b78399;
+    font-family: Georgia, serif;
+    font-style: italic;
+}
+
+.photo-collage {
+    position: relative;
+    min-height: 310px;
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.photo {
+    position: absolute;
+    padding: 9px 9px 28px;
+    background: #fff;
+    box-shadow: 0 5px 15px #6c405333;
+}
+
+.photo img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.photo span {
+    display: block;
+    padding-top: 7px;
+    color: #a36e85;
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+.photo-main {
+    width: 230px;
+    height: 245px;
+    transform: rotate(-6deg);
+    z-index: 2;
+}
+
+.photo-small {
+    width: 170px;
+    height: 190px;
+    right: 8%;
+    bottom: 5px;
+    transform: rotate(8deg);
+    z-index: 3;
+}
+
+.sticker {
+    position: absolute;
+    color: #c66c96;
+    font-size: 55px;
+}
+
+.sticker-heart {
+    top: 5px;
+    left: 12%;
+    transform: rotate(-15deg);
+}
+
+.sticker-star {
+    top: 25px;
+    right: 12%;
+    color: #d4ad62;
+}
+
+.letter-paper {
+    position: relative;
+    max-width: 650px;
+    margin: 25px auto;
+    padding: 35px;
+    background: #fffaf0;
+    border: 1px solid #d9b9a9;
+    box-shadow: 0 4px 12px #79546b22;
+    text-align: left;
+}
+
+.paper-decoration {
+    text-align: center;
+    color: #c47d9c;
+    font-size: 30px;
+}
+
+.letter-date {
+    color: #b27c91;
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+.letter-paper h2 {
+    color: #a85e83;
+    font-family: Georgia, serif;
+    font-size: 27px;
+    text-shadow: none;
+    margin: 20px 0;
+}
+
+.letter-text p {
+    color: #614c58;
+    font-family: Georgia, serif;
+    font-size: 17px;
+    font-weight: normal;
+    line-height: 2;
+}
+
+.letter-signature {
+    color: #a85e83;
+    font-family: Georgia, serif;
+    font-style: italic;
+    text-align: right;
+}
+
+.bottom-decoration {
+    text-align: right;
+}
+
+.scrapbook-footer {
+    border-top: 1px dashed #d3a6b7;
+    padding-top: 18px;
+}
+
+@media (max-width: 600px) {
+    .scrapbook {
+        padding: 18px 12px;
+    }
+
+    .photo-collage {
+        min-height: 260px;
+    }
+
+    .photo-main {
+        width: 185px;
+        height: 210px;
+    }
+
+    .photo-small {
+        width: 135px;
+        height: 155px;
+        right: 0;
+    }
+
+    .letter-paper {
+        padding: 22px;
+    }
+}
+/* ===== ENTREGA ESPECIAL DE RONALD CLAUS ===== */
+
+.special-delivery {
+    position: relative;
+    max-width: 650px;
+    margin: 35px auto;
+    padding: 22px;
+    background: #fff8f2;
+    border: 2px dashed #c98fa8;
+    outline: 5px solid #f5e4e9;
+    box-shadow: 5px 6px 0 #d8b1c1;
+    color: #80566b;
+    overflow: hidden;
+}
+
+.delivery-top,
+.delivery-bottom {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    color: #ad7892;
+    font-size: 9px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+.delivery-content {
+    text-align: center;
+    padding: 30px 12px;
+}
+
+.delivery-label {
+    color: #bd829c;
+    font-size: 11px;
+    letter-spacing: 3px;
+}
+
+.delivery-content h2 {
+    color: #a85e83;
+    font-family: Georgia, serif;
+    font-size: clamp(23px, 4vw, 34px);
+    text-shadow: none;
+    margin: 18px 0;
+}
+
+.delivery-divider {
+    color: #c68ba5;
+    margin: 20px 0;
+}
+
+.delivery-origin {
+    color: #9f7185;
+    font-family: Georgia, serif;
+    font-size: 19px;
+}
+
+.delivery-origin strong {
+    color: #b35f83;
+}
+
+.delivery-message {
+    max-width: 400px;
+    margin: 15px auto 25px;
+    color: #795b6b;
+    font-family: Georgia, serif;
+    line-height: 1.8;
+}
+
+.delivery-destination {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 7px;
+    padding: 13px 25px;
+    border: 1px solid #dfb8c8;
+    background: #fff0f2;
+    color: #a36e85;
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+.delivery-destination strong {
+    color: #a85e83;
+    font-family: Georgia, serif;
+    font-size: 15px;
+}
+
+.delivery-stamp {
+    position: absolute;
+    top: 65px;
+    right: 25px;
+    width: 65px;
+    height: 75px;
+    border: 2px solid #d3a1b4;
+    outline: 2px dashed #d3a1b4;
+    outline-offset: -6px;
+    background: #fbe8ed;
+    color: #b36f91;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(8deg);
+}
+
+.delivery-stamp span {
+    font-size: 27px;
+}
+
+.delivery-stamp small {
+    font-size: 8px;
+    letter-spacing: 1px;
+}
+
+.delivery-bottom {
+    border-top: 1px dashed #d8afbf;
+    padding-top: 15px;
+}
+
+@media (max-width: 600px) {
+    .special-delivery {
+        padding: 15px;
+    }
+
+    .delivery-stamp {
+        position: relative;
+        top: auto;
+        right: auto;
+        margin: 15px auto 0;
+    }
+
+    .delivery-content {
+        padding: 15px 5px;
+    }
+}.hidden {
+    display: none !important;
+}
+.photo-collage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.photo-collage img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+}
